@@ -194,6 +194,34 @@ export default function LandingPage() {
           <span className="text-amber-400 font-bold tabular-nums">{formatTime(timeLeft)}</span>
         </div>
       </div>
+      {/* Product Hero Section */}
+      <section data-aos="fade-up" className="relative pt-12 pb-20 px-4 max-w-7xl mx-auto overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 font-bold text-xs">
+              <Sparkles className="w-3 h-3" /> ¡Fórmula Original American "FUNRICH"!
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black text-slate-900 leading-[1.1]">
+              Libérate del Dolor con <span className="text-amber-600">FUNRICH</span> Joint Health.
+            </h1>
+            <p className="text-lg text-slate-600 font-medium">
+              La solución definitiva con Glucosamina, Condroitina y MSM que regenera tus articulaciones y devuelve la alegría a tus movimientos.
+            </p>
+            <div className="flex flex-wrap gap-4 pt-4">
+               <div className="flex items-center gap-2 bg-slate-50 px-4 py-2 rounded-xl border border-slate-100 italic text-sm">
+                 🚚 Pago Contraentrega en todo el Perú
+               </div>
+            </div>
+            <button onClick={() => document.getElementById('formulario-compra')?.scrollIntoView({behavior:'smooth'})} className="w-full md:w-auto bg-amber-500 hover:bg-amber-600 text-white font-black py-4 px-8 rounded-2xl shadow-xl shadow-amber-500/20 transition-all transform hover:scale-105 active:scale-95 text-lg uppercase">
+              ¡Quiero mi Kit FUNRICH!
+            </button>
+          </div>
+          <div className="relative group">
+            <div className="absolute inset-0 bg-amber-200 rounded-full blur-3xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+            <img src="/funrich_pack_1.png" alt="Funrich Joint Health" className="relative z-10 w-full max-w-sm mx-auto drop-shadow-2xl animate-float-slow" />
+          </div>
+        </div>
+      </section>
 
       {/* Empathy Section: Problem vs Solution */}
       <section className="py-24 px-4 bg-white overflow-hidden">
@@ -216,7 +244,7 @@ export default function LandingPage() {
                 </div>
                 <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
                   <p className="text-slate-800 font-bold text-sm mb-1">Resultados Reales</p>
-                  <p className="text-xs text-slate-700/70">Miles de peruanos ya caminan sin miedo gracias a Funirich.</p>
+                  <p className="text-xs text-slate-700/70">Miles de peruanos ya caminan sin miedo gracias a Funrich.</p>
                 </div>
               </div>
             </div>
@@ -226,7 +254,7 @@ export default function LandingPage() {
             <div data-aos="fade-right" className="order-2 md:order-1 space-y-8">
                <h2 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight">Vuelve a lo que realmente <span className="text-amber-600">te hace feliz.</span></h2>
                <p className="text-lg text-slate-600 leading-relaxed">
-                 Imagina despertar sin rigidez, subir escaleras sin apoyo y caminar horas sin cansancio. La fórmula completa de Funirich Joint Health regenera el tejido conectivo para que tu cuerpo se sienta joven otra vez.
+                 Imagina despertar sin rigidez, subir escaleras sin apoyo y caminar horas sin cansancio. La fórmula completa de Funrich Joint Health regenera el tejido conectivo para que tu cuerpo se sienta joven otra vez.
                </p>
                <ul className="space-y-4">
                  {[
@@ -254,7 +282,7 @@ export default function LandingPage() {
       <section className="bg-slate-50 py-20 px-4 border-y border-slate-100">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-black text-center mb-16 text-slate-900 tracking-tight">
-            ¿Por qué elegir Funirich Joint Health?
+            ¿Por qué elegir Funrich Joint Health?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 hover:border-amber-300 transition-all hover:shadow-xl group">
@@ -287,7 +315,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
              <h2 data-aos="fade-up" className="text-3xl md:text-5xl font-black text-slate-900 mb-6">Alimentación Articular <span className="text-amber-600">Inteligente</span></h2>
-             <p data-aos="fade-up" className="text-lg text-slate-600">Mira cómo la Glucosamina y Condroitina de Funirich penetran en el cartílago dañado para reconstruirlo desde el núcleo.</p>
+             <p data-aos="fade-up" className="text-lg text-slate-600">Mira cómo la Glucosamina y Condroitina de Funrich penetran en el cartílago dañado para reconstruirlo desde el núcleo.</p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -364,7 +392,7 @@ export default function LandingPage() {
           <div className="relative group">
             <img src="/quality_trust_seals.png" alt="Sellos de Calidad" className="mx-auto max-w-full md:max-w-3xl rounded-2xl shadow-lg border border-slate-100 transition-transform group-hover:scale-[1.01]" />
           </div>
-          <p className="mt-8 text-slate-500 text-sm font-medium">Cada frasco de Funirich Joint Health es sometido a pruebas de terceros para garantizar la pureza, potencia y ausencia de metales pesados.</p>
+          <p className="mt-8 text-slate-500 text-sm font-medium">Cada frasco de Funrich Joint Health es sometido a pruebas de terceros para garantizar la pureza, potencia y ausencia de metales pesados.</p>
         </div>
       </section>
 
@@ -396,24 +424,36 @@ export default function LandingPage() {
               </div>
             </div>
 
-            {/* Pricing Tiers */}
-            <div className="grid sm:grid-cols-3 gap-4 mb-10">
+            {/* Visual Pricing Tiers */}
+            <div className="grid sm:grid-cols-3 gap-6 mb-12">
               {[
-                { label: 'Pruébalo', title: '1 Frasco', price: '79.00' },
-                { label: 'Best Seller', title: '2 Frascos', price: '139.00' },
-                { label: 'Ahorro Total', title: '3 Frascos', price: '189.00' }
+                { label: 'Pruébalo', title: '1 Frasco', price: '79.00', img: '/funrich_pack_1.png' },
+                { label: 'Best Seller', title: '2 Frascos', price: '139.00', img: '/funrich_pack_2.png' },
+                { label: 'Ahorro Total', title: '3 Frascos', price: '189.00', img: '/funrich_pack_3.png' }
               ].map((item, idx) => (
                 <button
                   key={idx}
                   type="button"
                   onClick={() => setPaquete(`${item.title} (S/ ${item.price})`)}
-                  className={`p-5 rounded-2xl border-2 transition-all text-center flex flex-col items-center gap-1 ${
-                    paquete.includes(item.title) ? 'border-amber-500 bg-amber-50 ring-2 ring-amber-500/20' : 'border-slate-100 hover:border-amber-200'
+                  className={`relative group bg-white rounded-3xl border-2 transition-all p-4 ${
+                    paquete.includes(item.title) ? 'border-amber-500 ring-4 ring-amber-500/10 shadow-xl' : 'border-slate-100 hover:border-amber-200 shadow-sm'
                   }`}
                 >
-                  <span className={`text-[9px] font-black uppercase tracking-widest px-2 py-0.5 rounded-full ${paquete.includes(item.title) ? 'bg-amber-500 text-white' : 'bg-slate-100 text-slate-500'}`}>{item.label}</span>
-                  <span className="text-slate-900 font-bold">{item.title}</span>
-                  <span className="text-xl font-black text-amber-600">S/ {item.price}</span>
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-500 text-white text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full z-10">
+                    {item.label}
+                  </div>
+                  <div className="aspect-square mb-4 overflow-hidden rounded-2xl bg-slate-50 relative">
+                    <img src={item.img} alt={item.title} className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform" />
+                  </div>
+                  <div className="space-y-1">
+                    <p className="text-slate-900 font-bold text-base">{item.title}</p>
+                    <p className="text-2xl font-black text-amber-600">S/ {item.price}</p>
+                  </div>
+                  {paquete.includes(item.title) && (
+                    <div className="absolute top-2 right-2 w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center text-white">
+                      <Sparkles className="w-3 h-3 fill-current" />
+                    </div>
+                  )}
                 </button>
               ))}
             </div>
@@ -499,7 +539,7 @@ export default function LandingPage() {
              <h3 className="text-2xl font-black text-slate-900 mb-2">¡Casi listo!</h3>
              <p className="text-slate-500 text-sm mb-6">Confirma tu pedido por WhatsApp para que podamos coordinar la entrega gratuita hoy mismo.</p>
              <div className="bg-slate-50 p-4 rounded-2xl space-y-2 mb-8 text-xs border border-slate-100">
-                <div className="flex justify-between"><span className="text-slate-400">Producto:</span><span className="font-bold">Funirich Joint</span></div>
+                <div className="flex justify-between"><span className="text-slate-400">Producto:</span><span className="font-bold">Funrich Joint</span></div>
                 <div className="flex justify-between"><span className="text-slate-400">Paquete:</span><span className="font-bold">{paquete.split('(')[0]}</span></div>
                 <div className="flex justify-between border-t border-slate-200 pt-2"><span className="text-slate-900 font-bold uppercase">Total a Pagar:</span><span className="font-black text-amber-600">{paquete.split('(')[1]?.replace(')','')}</span></div>
              </div>

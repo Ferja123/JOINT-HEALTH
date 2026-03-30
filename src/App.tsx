@@ -154,7 +154,7 @@ export default function LandingPage() {
 
   const confirmOrder = () => {
     const phoneNumber = "51919749480"; // Mismo que Curcuma
-    const message = `*NUEVO PEDIDO - FUNIRICH JOINT HEALTH* 🦴\n\n` +
+    const message = `*NUEVO PEDIDO - FUNRICH JOINT HEALTH* 🦴\n\n` +
       `*Paquete:* ${paquete}\n` +
       `*Nombre:* ${formData.nombre}\n` +
       `*Teléfono:* ${formData.telefono}\n` +
@@ -218,7 +218,7 @@ export default function LandingPage() {
           </div>
           <div className="relative group">
             <div className="absolute inset-0 bg-amber-200 rounded-full blur-3xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
-            <img src="/funrich_pack_1.png" alt="Funrich Joint Health" className="relative z-10 w-full max-w-sm mx-auto drop-shadow-2xl animate-float-slow" />
+            <img src="/original_bottle.png" alt="Funrich Joint Health Original" className="relative z-10 w-full max-w-sm mx-auto drop-shadow-2xl animate-float-slow" />
           </div>
         </div>
       </section>
@@ -380,7 +380,7 @@ export default function LandingPage() {
              </div>
           </div>
           <div className="mt-16 flex justify-center">
-             <img src="/funirich_ingredients_info.png" alt="Ingredientes" className="rounded-3xl border-2 border-slate-700 max-w-full md:max-w-2xl shadow-2xl" />
+             <img src="/funrich_ingredients_info.png" alt="Ingredientes Funrich" className="rounded-3xl border-2 border-slate-700 max-w-full md:max-w-2xl shadow-2xl" />
           </div>
         </div>
       </section>

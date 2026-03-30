@@ -357,30 +357,35 @@ export default function LandingPage() {
             <h2 className="text-3xl md:text-5xl font-black mb-6">Información Nutricional Avanzada</h2>
             <p className="text-slate-400">Todo lo que necesitas en una sola cápsula de alta potencia. Sin rellenos, solo ingredientes puros.</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
              <div className="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 text-center">
                <p className="text-amber-500 font-black text-2xl mb-1">1500mg</p>
                <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">Glucosamina</p>
                <p className="text-xs text-slate-300">Base estructural para el cartílago sano.</p>
              </div>
              <div className="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 text-center">
-               <p className="text-amber-500 font-black text-2xl mb-1">1200mg</p>
+               <p className="text-amber-500 font-black text-2xl mb-1">150mg</p>
                <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">Condroitina</p>
                <p className="text-xs text-slate-300">Resistencia contra la presión y el peso.</p>
              </div>
              <div className="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 text-center">
-               <p className="text-amber-500 font-black text-2xl mb-1">2000mg</p>
-               <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">MSM</p>
-               <p className="text-xs text-slate-300">Aminoácido esencial para tejidos elásticos.</p>
+               <p className="text-amber-500 font-black text-2xl mb-1">200mg</p>
+               <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">Boswellia</p>
+               <p className="text-xs text-slate-300">Máximo poder antiinflamatorio natural.</p>
              </div>
              <div className="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 text-center">
-               <p className="text-amber-500 font-black text-2xl mb-1">95% Pureza</p>
+               <p className="text-amber-500 font-black text-2xl mb-1">150mg</p>
                <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">Cúrcuma</p>
-               <p className="text-xs text-slate-300">Máximo poder antioxidante y alivio.</p>
+               <p className="text-xs text-slate-300">Alivio inmediato y protección celular.</p>
+             </div>
+             <div className="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 text-center">
+               <p className="text-amber-500 font-black text-2xl mb-1">25mg</p>
+               <p className="font-bold uppercase tracking-widest text-[10px] text-slate-400 mb-2">MSM</p>
+               <p className="text-xs text-slate-300">Nutriente esencial para tejidos elásticos.</p>
              </div>
           </div>
           <div className="mt-16 flex justify-center">
-             <img src="/funrich_ingredients_info.png" alt="Ingredientes Funrich" className="rounded-3xl border-2 border-slate-700 max-w-full md:max-w-2xl shadow-2xl" />
+             <img src="/funrich_ingredients_info.png" alt="Información Nutricional FUNRICH Original" className="rounded-3xl border-2 border-slate-700 max-w-full md:max-w-4xl shadow-2xl" />
           </div>
         </div>
       </section>

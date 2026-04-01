@@ -169,7 +169,7 @@ export default function LandingPage() {
       window.ttq.track('PlaceAnOrder', {
         content_name: paquete,
         currency: 'PEN',
-        value: paquete.includes('79') ? 79 : paquete.includes('139') ? 139 : 189
+        value: paquete.includes('99') ? 99 : paquete.includes('139') ? 139 : 189
       });
     }
 
@@ -432,7 +432,7 @@ export default function LandingPage() {
             {/* Visual Pricing Tiers */}
             <div className="grid sm:grid-cols-3 gap-6 mb-12">
               {[
-                { label: 'Pruébalo', title: '1 Frasco', price: '79.00', img: '/funrich_pack_1.png' },
+                { label: 'Pruébalo', title: '1 Frasco', price: '99.00', img: '/funrich_pack_1.png' },
                 { label: 'Best Seller', title: '2 Frascos', price: '139.00', img: '/funrich_pack_2.png' },
                 { label: 'Ahorro Total', title: '3 Frascos', price: '189.00', img: '/funrich_pack_3.png' }
               ].map((item, idx) => (

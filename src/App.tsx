@@ -409,10 +409,10 @@ export default function LandingPage() {
             <p className="text-slate-600 text-lg">Paga en efectivo al recibir el producto en tu puerta.</p>
             <div className="mt-8 flex justify-center relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-slate-100 rounded-3xl -z-10"></div>
-              <video 
-                src="/womans_hands_grasping.mp4" 
-                className="h-64 md:h-80 w-auto rounded-3xl shadow-2xl border-4 border-white"
-                autoPlay loop muted playsInline
+              <img 
+                src="/funrich_pack_1.png" 
+                className="h-64 md:h-80 w-auto rounded-3xl shadow-2xl border-4 border-white object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                alt="Funrich Joint Health"
               />
             </div>
           </div>

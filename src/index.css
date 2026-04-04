@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
+/* Montserrat for Headings, Inter for Body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #1A202C; /* Darker Slate for text */
+  background-color: #F8FAFC; /* Clean grey-white background */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,34 +18,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 @theme {
-  --color-primary: #FFC107;
-  --color-secondary: #FFD54F;
-  --color-accent: #FFA000;
+  --color-brand-navy: #1A365D;
+  --color-brand-gold: #D4AF37;
+  --color-brand-accent: #B91C1C; /* Deep Red for Alert Urgency */
+  --color-brand-light: #F8FAFC;
+  
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Custom Transitions */
+  --transition-premium: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
 }
 
-.animate-float {
-  animation: float 3s ease-in-out infinite;
+.animate-float-premium {
+  animation: float 6s ease-in-out infinite;
 }
 
-@keyframes slide {
-  from { background-position: 0 0; }
-  to { background-position: 40px 0; }
+@keyframes pulse-urgency {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
 }
 
-.animate-slide {
-  animation: slide 2s linear infinite;
+.animate-pulse-urgency {
+  animation: pulse-urgency 2s ease-in-out infinite;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-navy {
+  background: rgba(26, 54, 93, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
